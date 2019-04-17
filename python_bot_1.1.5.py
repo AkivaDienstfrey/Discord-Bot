@@ -7,7 +7,7 @@ from discord import Game
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("?", "!", "-")
-TOKEN = "<PUT YOUR TOKEN HERE>"
+TOKEN = "NTM1MjgxNTA5NTQwODIzMDYx.DyL2Yw.AW7UTuO1unX-KWK4546SQ1xUiRc"
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -33,7 +33,7 @@ async def eight_ball(context):
 async def on_message(message):
     if message.author != client.user and message.content[:9] == "-chastise":
         if message.content[10:] != "@Johnny Wobble#1085":
-            print("confirmed stage 2")
+            # print("confirmed stage 2")
             responses = [
                 f"Were you being bad {message.content[10:]}? or are you just slow?",
                 f"How many time have I told you {message.content[10:]}! Don't be slow and eat your cereal!",
