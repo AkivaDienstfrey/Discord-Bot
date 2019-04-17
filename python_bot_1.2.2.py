@@ -31,7 +31,7 @@ async def eight_ball(context):
 
 
 @client.command(name='google',
-                description="format: -search <optional: [(number of results) <= 9]> <query>",
+                description="format: -google <optional: [(number of results) <= 9]> <query>",
                 brief="Googles Stuff",
                 aliases=["search"],
                 pass_context=True)
